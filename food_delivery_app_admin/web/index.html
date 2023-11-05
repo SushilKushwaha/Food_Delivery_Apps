@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="food_delivery_app_admin">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>food_delivery_app_admin</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+
+ <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-storage.js"></script>
+  <script>
+   firebaseConfig = {
+    apiKey: "AIzaSyB6yRRU8XijUviguRHbb-xNrF9728FyRCs",
+    authDomain: "flutter-food-delivery-ap-fe9bc.firebaseapp.com",
+    databaseURL: "https://flutter-food-delivery-ap-fe9bc-default-rtdb.firebaseio.com",
+    projectId: "flutter-food-delivery-ap-fe9bc",
+    storageBucket: "flutter-food-delivery-ap-fe9bc.appspot.com",
+    messagingSenderId: "531090819761",
+    appId: "1:531090819761:web:372ba8865a0af69f6c3090",
+    measurementId: "G-56NNW3L1EP"
+  };
+
+  // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+ firebase.analytics();
+
+</script>
+
+
+  <script>
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+              });
+            }
+
+  </script>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
